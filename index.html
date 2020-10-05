@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FootballGame</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game">
+        <header class="game-header">
+            <div class="game-goals">
+                <div class="game-goals__title">IN THE LEFT GOAL</div>
+                <div class="game-goals__list__A"></div>      
+            </div>
+            <div class="game-scores">
+                <div class="game-scores__title">SCORE</div>
+                <div data-scores-total class="game-scores__values">
+                    <span id="js-game-scores-a"></span>:<span id="js-game-scores-b"></span>
+                </div>
+            </div>
+            <div class="game-goals">
+                <div class="game-goals__title">IN THE RIGHT GOAL</div>
+                <div class="game-goals__list__B"></div>
+            </div>
+        </header>
+        <section class="game-field">
+            <div id="js-field-area" class="game-field__area"></div>
+            <div class="game-field__objects">
+                <div id="js-game-gate-a" class="game-gate game-gate_a"></div>
+                <div class="game-markers"></div>
+                <div id="js-game-gate-b" class="game-gate game-gate_b"></div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
